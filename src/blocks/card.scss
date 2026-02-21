@@ -32,7 +32,7 @@
   }
 
   &__title {
-    margin: 40px 16px 4px;
+    margin: 40px $size-base 4px;
 
     font-size: 12px;
 
@@ -50,7 +50,7 @@
 
     margin-bottom: 0;
 
-    margin-inline: 16px;
+    margin-inline: $size-base;
 
     font-size: 10px;
 
@@ -64,13 +64,13 @@
   }
 
   &__review {
-    margin-right: 16px;
+    margin-right: $size-base;
 
-    margin-left: 16px;
+    margin-left: $size-base;
 
-    height: 16px;
+    height: $size-base;
 
-    margin-top: 16px;
+    margin-top: $size-base;
 
     display: flex;
 
@@ -92,7 +92,7 @@
   }
 
   &__price {
-    margin-inline: 16px;
+    margin-inline: $size-base;
 
     margin-top: 24px;
 
@@ -118,7 +118,7 @@
   &__value {
     line-height: 18px;
 
-    font-size: 16px;
+    font-size: $size-base;
 
     font-weight: 700;
 
@@ -136,7 +136,7 @@
 
     padding: 0;
 
-    margin: 16px;
+    margin: $size-base;
 
     text-transform: uppercase;
 
@@ -158,7 +158,7 @@
 
     font-size: 14px;
 
-    line-height: 16px;
+    line-height: $size-base;
     border: 1px solid $color-primary;
 
     cursor: pointer;
