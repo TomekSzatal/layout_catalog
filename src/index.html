@@ -7,16 +7,22 @@
       content="width=device-width, initial-scale=1.0"
     />
     <title>Catalog</title>
-
+    <link
+      rel="preconnect"
+      href="https://fonts.googleapis.com"
+    />
     <link
       rel="preconnect"
       href="https://fonts.gstatic.com"
     />
     <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
-
     <link
       rel="stylesheet"
       href="styles/index.scss"
@@ -25,501 +31,370 @@
 
   <body>
     <header class="header">
-      <div class="header__container">
+      <a
+        href="#"
+        class="logo"
+      >
         <img
           src="images/logo.png"
-          alt="Logo"
-          class="header__logo"
+          alt="logo of company"
+          class="logo__image"
         />
+      </a>
 
-        <nav class="nav">
-          <a
-            href="#"
-            class="nav__link is-active"
-          >
-            Apple
-          </a>
-          <a
-            href="#"
-            class="nav__link"
-          >
-            Samsung
-          </a>
-          <a
-            href="#"
-            class="nav__link"
-          >
-            Smartphones
-          </a>
-          <a
-            href="#"
-            class="nav__link"
-            data-qa="nav-hover"
-          >
-            Laptops & computers
-          </a>
-          <a
-            href="#"
-            class="nav__link"
-          >
-            Gadgets
-          </a>
-          <a
-            href="#"
-            class="nav__link"
-          >
-            Tablets
-          </a>
-          <a
-            href="#"
-            class="nav__link"
-          >
-            Photo
-          </a>
-          <a
-            href="#"
-            class="nav__link"
-          >
-            Video
-          </a>
-        </nav>
-      </div>
+      <!--NAVIGATION-->
+      <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a
+              href="#"
+              class="nav__link is-active"
+            >
+              apple
+            </a>
+          </li>
+          <li class="nav__item">
+            <a
+              href="#"
+              class="nav__link"
+            >
+              samsung
+            </a>
+          </li>
+          <li class="nav__item">
+            <a
+              href="#"
+              class="nav__link"
+            >
+              smartphones
+            </a>
+          </li>
+          <li class="nav__item">
+            <a
+              href="#"
+              class="nav__link"
+              data-qa="nav-hover"
+            >
+              laptops & computers
+            </a>
+          </li>
+          <li class="nav__item">
+            <a
+              href="#"
+              class="nav__link"
+            >
+              gadgets
+            </a>
+          </li>
+          <li class="nav__item">
+            <a
+              href="#"
+              class="nav__link"
+            >
+              tablets
+            </a>
+          </li>
+          <li class="nav__item">
+            <a
+              href="#"
+              class="nav__link"
+            >
+              photo
+            </a>
+          </li>
+          <li class="nav__item">
+            <a
+              href="#"
+              class="nav__link"
+            >
+              video
+            </a>
+          </li>
+        </ul>
+      </nav>
     </header>
 
-    <main class="catalog">
-      <div class="catalog__grid">
-        <!-- FIRST CARD -->
-        <article
-          class="card"
-          data-qa="card"
+    <main class="main">
+      <section
+        class="card"
+        data-qa="card"
+      >
+        <img
+          src="images/imac.jpeg"
+          alt="APPLE iMac"
+          class="card__image"
+        />
+
+        <h2 class="card__title">
+          APPLE A1419 iMac 27" Retina
+          <br />
+          5K Monoblock (MNED2UA/A)
+        </h2>
+
+        <p class="card__code">Product code: 195434</p>
+
+        <div class="card__review">
+          <div class="stars stars--4">
+            <div class="stars__star"></div>
+            <div class="stars__star"></div>
+            <div class="stars__star"></div>
+            <div class="stars__star"></div>
+            <div class="stars__star"></div>
+          </div>
+
+          <p class="card__reviews">Reviews: 5</p>
+        </div>
+
+        <div class="card__price">
+          <span class="card__label">Price:</span>
+          <span class="card__value">$2,199</span>
+        </div>
+
+        <a
+          class="card__buy"
+          data-qa="card-hover"
         >
-          <img
-            src="images/imac.jpeg"
-            alt="iMac"
-            class="card__image"
-          />
+          Buy
+        </a>
+      </section>
+      <section class="card">
+        <img
+          src="images/imac.jpeg"
+          alt="APPLE iMac"
+          class="card__image"
+        />
 
-          <h3 class="card__title">APPLE A1419 iMac 27" Retina 5K</h3>
+        <h2 class="card__title">
+          APPLE A1419 iMac 27" Retina
+          <br />
+          5K Monoblock (MNED2UA/A)
+        </h2>
 
-          <div class="card__code">Product code: 195434</div>
+        <p class="card__code">Product code: 195434</p>
 
-          <div class="card__rating">
-            <div class="stars">
-              <img
-                src="images/star-active.svg"
-                class="stars__star"
-                alt="Starnpo"
-              />
-              <img
-                src="images/star-active.svg"
-                class="stars__star"
-                alt="Star"
-              />
-              <img
-                src="images/star-active.svg"
-                class="stars__star"
-                alt="Star"
-              />
-              <img
-                src="images/star-active.svg"
-                class="stars__star"
-                alt="Star"
-              />
-              <img
-                src="images/star.svg"
-                class="stars__star"
-                alt="Star"
-              />
-            </div>
-            <span class="card__reviews">Reviews: 5</span>
+        <div class="card__review">
+          <div class="stars stars--4">
+            <div class="stars__star"></div>
+            <div class="stars__star"></div>
+            <div class="stars__star"></div>
+            <div class="stars__star"></div>
+            <div class="stars__star"></div>
           </div>
 
-          <div class="card__price-row">
-            <span class="card__price-label">Price:</span>
-            <span class="card__price">$2,199</span>
+          <p class="card__reviews">Reviews: 5</p>
+        </div>
+
+        <div class="card__price">
+          <span class="card__label">Price:</span>
+          <span class="card__value">$2,199</span>
+        </div>
+
+        <a class="card__buy">BUY</a>
+      </section>
+      <section class="card">
+        <img
+          src="images/imac.jpeg"
+          alt="APPLE iMac"
+          class="card__image"
+        />
+
+        <h2 class="card__title">
+          APPLE A1419 iMac 27" Retina
+          <br />
+          5K Monoblock (MNED2UA/A)
+        </h2>
+
+        <p class="card__code">Product code: 195434</p>
+
+        <div class="card__review">
+          <div class="stars stars--4">
+            <div class="stars__star"></div>
+            <div class="stars__star"></div>
+            <div class="stars__star"></div>
+            <div class="stars__star"></div>
+            <div class="stars__star"></div>
           </div>
 
-          <a
-            href="#"
-            class="card__button"
-            data-qa="card-hover"
-          >
-            Buy
-          </a>
-        </article>
+          <p class="card__reviews">Reviews: 5</p>
+        </div>
 
-        <!-- COPY CARD 7 TIMES -->
-        <article class="card">
-          <img
-            src="images/imac.jpeg"
-            alt="iMac"
-            class="card__image"
-          />
-          <h3 class="card__title">APPLE A1419 iMac 27" Retina 5K</h3>
-          <div class="card__code">Product code: 195434</div>
+        <div class="card__price">
+          <span class="card__label">Price:</span>
+          <span class="card__value">$2,199</span>
+        </div>
 
-          <div class="card__rating">
-            <div class="stars">
-              <img
-                src="images/star-active.svg"
-                class="stars__star"
-                alt="Star"
-              />
-              <img
-                src="images/star-active.svg"
-                class="stars__star"
-                alt="Star"
-              />
-              <img
-                src="images/star-active.svg"
-                class="stars__star"
-                alt="Star"
-              />
-              <img
-                src="images/star-active.svg"
-                class="stars__star"
-                alt="Star"
-              />
-              <img
-                src="images/star.svg"
-                class="stars__star"
-                alt="Star"
-              />
-            </div>
-            <span class="card__reviews">Reviews: 5</span>
+        <a class="card__buy">BUY</a>
+      </section>
+      <section class="card">
+        <img
+          src="images/imac.jpeg"
+          alt="APPLE iMac"
+          class="card__image"
+        />
+
+        <h2 class="card__title">
+          APPLE A1419 iMac 27" Retina
+          <br />
+          5K Monoblock (MNED2UA/A)
+        </h2>
+
+        <p class="card__code">Product code: 195434</p>
+
+        <div class="card__review">
+          <div class="stars stars--4">
+            <div class="stars__star"></div>
+            <div class="stars__star"></div>
+            <div class="stars__star"></div>
+            <div class="stars__star"></div>
+            <div class="stars__star"></div>
           </div>
 
-          <div class="card__price-row">
-            <span class="card__price-label">Price:</span>
-            <span class="card__price">$2,199</span>
+          <p class="card__reviews">Reviews: 5</p>
+        </div>
+
+        <div class="card__price">
+          <span class="card__label">Price:</span>
+          <span class="card__value">$2,199</span>
+        </div>
+
+        <a class="card__buy">BUY</a>
+      </section>
+      <section class="card">
+        <img
+          src="images/imac.jpeg"
+          alt="APPLE iMac"
+          class="card__image"
+        />
+
+        <h2 class="card__title">
+          APPLE A1419 iMac 27" Retina
+          <br />
+          5K Monoblock (MNED2UA/A)
+        </h2>
+
+        <p class="card__code">Product code: 195434</p>
+
+        <div class="card__review">
+          <div class="stars stars--4">
+            <div class="stars__star"></div>
+            <div class="stars__star"></div>
+            <div class="stars__star"></div>
+            <div class="stars__star"></div>
+            <div class="stars__star"></div>
           </div>
 
-          <a
-            href="#"
-            class="card__button"
-          >
-            Buy
-          </a>
-        </article>
+          <p class="card__reviews">Reviews: 5</p>
+        </div>
 
-        <article class="card">
-          <img
-            src="images/imac.jpeg"
-            alt="iMac"
-            class="card__image"
-          />
-          <h3 class="card__title">APPLE A1419 iMac 27" Retina 5K</h3>
-          <div class="card__code">Product code: 195434</div>
+        <div class="card__price">
+          <span class="card__label">Price:</span>
+          <span class="card__value">$2,199</span>
+        </div>
 
-          <div class="card__rating">
-            <div class="stars">
-              <img
-                src="images/star-active.svg"
-                class="stars__star"
-                alt="Star"
-              />
-              <img
-                src="images/star-active.svg"
-                class="stars__star"
-                alt="Star"
-              />
-              <img
-                src="images/star-active.svg"
-                class="stars__star"
-                alt="Star"
-              />
-              <img
-                src="images/star-active.svg"
-                class="stars__star"
-                alt="Star"
-              />
-              <img
-                src="images/star.svg"
-                class="stars__star"
-                alt="Star"
-              />
-            </div>
-            <span class="card__reviews">Reviews: 5</span>
+        <a class="card__buy">BUY</a>
+      </section>
+      <section class="card">
+        <img
+          src="images/imac.jpeg"
+          alt="APPLE iMac"
+          class="card__image"
+        />
+
+        <h2 class="card__title">
+          APPLE A1419 iMac 27" Retina
+          <br />
+          5K Monoblock (MNED2UA/A)
+        </h2>
+
+        <p class="card__code">Product code: 195434</p>
+
+        <div class="card__review">
+          <div class="stars stars--4">
+            <div class="stars__star"></div>
+            <div class="stars__star"></div>
+            <div class="stars__star"></div>
+            <div class="stars__star"></div>
+            <div class="stars__star"></div>
           </div>
 
-          <div class="card__price-row">
-            <span class="card__price-label">Price:</span>
-            <span class="card__price">$2,199</span>
+          <p class="card__reviews">Reviews: 5</p>
+        </div>
+
+        <div class="card__price">
+          <span class="card__label">Price:</span>
+          <span class="card__value">$2,199</span>
+        </div>
+
+        <a class="card__buy">BUY</a>
+      </section>
+      <section class="card">
+        <img
+          src="images/imac.jpeg"
+          alt="APPLE iMac"
+          class="card__image"
+        />
+
+        <h2 class="card__title">
+          APPLE A1419 iMac 27" Retina
+          <br />
+          5K Monoblock (MNED2UA/A)
+        </h2>
+
+        <p class="card__code">Product code: 195434</p>
+
+        <div class="card__review">
+          <div class="stars stars--4">
+            <div class="stars__star"></div>
+            <div class="stars__star"></div>
+            <div class="stars__star"></div>
+            <div class="stars__star"></div>
+            <div class="stars__star"></div>
           </div>
 
-          <a
-            href="#"
-            class="card__button"
-          >
-            Buy
-          </a>
-        </article>
+          <p class="card__reviews">Reviews: 5</p>
+        </div>
 
-        <article class="card">
-          <img
-            src="images/imac.jpeg"
-            alt="iMac"
-            class="card__image"
-          />
-          <h3 class="card__title">APPLE A1419 iMac 27" Retina 5K</h3>
-          <div class="card__code">Product code: 195434</div>
+        <div class="card__price">
+          <span class="card__label">Price:</span>
+          <span class="card__value">$2,199</span>
+        </div>
 
-          <div class="card__rating">
-            <div class="stars">
-              <img
-                src="images/star-active.svg"
-                class="stars__star"
-                alt="Star"
-              />
-              <img
-                src="images/star-active.svg"
-                class="stars__star"
-                alt="Star"
-              />
-              <img
-                src="images/star-active.svg"
-                class="stars__star"
-                alt="Star"
-              />
-              <img
-                src="images/star-active.svg"
-                class="stars__star"
-                alt="Star"
-              />
-              <img
-                src="images/star.svg"
-                class="stars__star"
-                alt="Star"
-              />
-            </div>
-            <span class="card__reviews">Reviews: 5</span>
+        <a class="card__buy">BUY</a>
+      </section>
+      <section class="card">
+        <img
+          src="images/imac.jpeg"
+          alt="APPLE iMac"
+          class="card__image"
+        />
+
+        <h2 class="card__title">
+          APPLE A1419 iMac 27" Retina
+          <br />
+          5K Monoblock (MNED2UA/A)
+        </h2>
+
+        <p class="card__code">Product code: 195434</p>
+
+        <div class="card__review">
+          <div class="stars stars--4">
+            <div class="stars__star"></div>
+            <div class="stars__star"></div>
+            <div class="stars__star"></div>
+            <div class="stars__star"></div>
+            <div class="stars__star"></div>
           </div>
 
-          <div class="card__price-row">
-            <span class="card__price-label">Price:</span>
-            <span class="card__price">$2,199</span>
-          </div>
+          <p class="card__reviews">Reviews: 5</p>
+        </div>
 
-          <a
-            href="#"
-            class="card__button"
-          >
-            Buy
-          </a>
-        </article>
+        <div class="card__price">
+          <span class="card__label">Price:</span>
+          <span class="card__value">$2,199</span>
+        </div>
 
-        <article class="card">
-          <img
-            src="images/imac.jpeg"
-            alt="iMac"
-            class="card__image"
-          />
-          <h3 class="card__title">APPLE A1419 iMac 27" Retina 5K</h3>
-          <div class="card__code">Product code: 195434</div>
-
-          <div class="card__rating">
-            <div class="stars">
-              <img
-                src="images/star-active.svg"
-                class="stars__star"
-                alt="Star"
-              />
-              <img
-                src="images/star-active.svg"
-                class="stars__star"
-                alt="Star"
-              />
-              <img
-                src="images/star-active.svg"
-                class="stars__star"
-                alt="Star"
-              />
-              <img
-                src="images/star-active.svg"
-                class="stars__star"
-                alt="Star"
-              />
-              <img
-                src="images/star.svg"
-                class="stars__star"
-                alt="Star"
-              />
-            </div>
-            <span class="card__reviews">Reviews: 5</span>
-          </div>
-
-          <div class="card__price-row">
-            <span class="card__price-label">Price:</span>
-            <span class="card__price">$2,199</span>
-          </div>
-
-          <a
-            href="#"
-            class="card__button"
-          >
-            Buy
-          </a>
-        </article>
-
-        <article class="card">
-          <img
-            src="images/imac.jpeg"
-            alt="iMac"
-            class="card__image"
-          />
-          <h3 class="card__title">APPLE A1419 iMac 27" Retina 5K</h3>
-          <div class="card__code">Product code: 195434</div>
-
-          <div class="card__rating">
-            <div class="stars">
-              <img
-                src="images/star-active.svg"
-                class="stars__star"
-                alt="Star"
-              />
-              <img
-                src="images/star-active.svg"
-                class="stars__star"
-                alt="Star"
-              />
-              <img
-                src="images/star-active.svg"
-                class="stars__star"
-                alt="Star"
-              />
-              <img
-                src="images/star-active.svg"
-                class="stars__star"
-                alt="Star"
-              />
-              <img
-                src="images/star.svg"
-                class="stars__star"
-                alt="Star"
-              />
-            </div>
-            <span class="card__reviews">Reviews: 5</span>
-          </div>
-
-          <div class="card__price-row">
-            <span class="card__price-label">Price:</span>
-            <span class="card__price">$2,199</span>
-          </div>
-
-          <a
-            href="#"
-            class="card__button"
-          >
-            Buy
-          </a>
-        </article>
-
-        <article class="card">
-          <img
-            src="images/imac.jpeg"
-            alt="iMac"
-            class="card__image"
-          />
-          <h3 class="card__title">APPLE A1419 iMac 27" Retina 5K</h3>
-          <div class="card__code">Product code: 195434</div>
-
-          <div class="card__rating">
-            <div class="stars">
-              <img
-                src="images/star-active.svg"
-                class="stars__star"
-                alt="Star"
-              />
-              <img
-                src="images/star-active.svg"
-                class="stars__star"
-                alt="Star"
-              />
-              <img
-                src="images/star-active.svg"
-                class="stars__star"
-                alt="Star"
-              />
-              <img
-                src="images/star-active.svg"
-                class="stars__star"
-                alt="Star"
-              />
-              <img
-                src="images/star.svg"
-                class="stars__star"
-                alt="Star"
-              />
-            </div>
-            <span class="card__reviews">Reviews: 5</span>
-          </div>
-
-          <div class="card__price-row">
-            <span class="card__price-label">Price:</span>
-            <span class="card__price">$2,199</span>
-          </div>
-
-          <a
-            href="#"
-            class="card__button"
-          >
-            Buy
-          </a>
-        </article>
-
-        <article class="card">
-          <img
-            src="images/imac.jpeg"
-            alt="iMac"
-            class="card__image"
-          />
-          <h3 class="card__title">APPLE A1419 iMac 27" Retina 5K</h3>
-          <div class="card__code">Product code: 195434</div>
-
-          <div class="card__rating">
-            <div class="stars">
-              <img
-                src="images/star-active.svg"
-                class="stars__star"
-                alt="Star"
-              />
-              <img
-                src="images/star-active.svg"
-                class="stars__star"
-                alt="Star"
-              />
-              <img
-                src="images/star-active.svg"
-                class="stars__star"
-                alt="Star"
-              />
-              <img
-                src="images/star-active.svg"
-                class="stars__star"
-                alt="Star"
-              />
-              <img
-                src="images/star.svg"
-                class="stars__star"
-                alt="Star"
-              />
-            </div>
-            <span class="card__reviews">Reviews: 5</span>
-          </div>
-
-          <div class="card__price-row">
-            <span class="card__price-label">Price:</span>
-            <span class="card__price">$2,199</span>
-          </div>
-
-          <a
-            href="#"
-            class="card__button"
-          >
-            Buy
-          </a>
-        </article>
-      </div>
+        <a class="card__buy">BUY</a>
+      </section>
     </main>
   </body>
 </html>
